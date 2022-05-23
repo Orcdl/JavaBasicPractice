@@ -19,13 +19,11 @@ public class lab02_3 {
         double weight = input.nextDouble();
         double BMI = weight / (height * 2);
         if(BMI <= 18.5 ){
-            System.out.println("You're in the underweight range");
-        }else if(BMI > 18.5 && BMI <=24.9){
-            System.out.println("You're in the Normal weight range");
-        }else if(BMI <=25 && BMI <=29.9){
-            System.out.println("You're in the Overweight range");
+            System.out.println("You should be increase your weight in range from: " + (18.5 - BMI) * 2 * height + "kg to " + (24.9 - BMI) * 2 * height + "kg");
+        }else if(BMI > 24.9){
+            System.out.println("You should be decrease your weight in range from:  " + (BMI - 24.9) * 2 * height + "kg to " + (BMI - 18.5) * 2 * height + "kg");
         }else{
-            System.out.println("You're in the Obesity range");
+            System.out.println("You're in the Normal weight range");
         }
     }
 }
