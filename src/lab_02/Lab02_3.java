@@ -10,7 +10,7 @@ import java.util.Scanner;
 //Obesity = BMI of 30 or greater
 //BMI = weight / (height x 2)
 // Suggest user to increase/decrease weight
-public class lab02_3 {
+public class Lab02_3 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Please enter your height (m)");

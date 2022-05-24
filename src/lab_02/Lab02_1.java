@@ -7,7 +7,8 @@ package lab_02;
     //Obesity = BMI of 30 or greater
 //BMI = weight / (height x 2)
 import java.util.Scanner;
-public class lab02_1 {
+public class Lab02_1 {
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Please enter your height (m)");
