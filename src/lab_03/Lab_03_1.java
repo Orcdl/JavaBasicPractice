@@ -4,7 +4,8 @@ package lab_03;
 // int[] intArr = {1, 2, 3, 4, 5};
 // Even numders: 2
 // Odd numbers: 3
-public class Lab_03 {
+public class Lab_03_1 {
+
     public static void main(String[] args) {
         int[] inArr ={1,2,3,4,5};
         int evennumber = 0;
