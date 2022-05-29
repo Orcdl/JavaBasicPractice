@@ -4,7 +4,7 @@ package lab_03;
 //int[] intArr = {1, 2, 3, 4, 5};
 //Minimum: 1
 //Maximum: 5
-public class Lab_03_21 {
+public class Lab_03_2 {
 
     public static void main(String[] args) {
         int[] inArr = {2, 1, 3, 4, 5};
