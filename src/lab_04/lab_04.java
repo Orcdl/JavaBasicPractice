@@ -16,17 +16,21 @@ public class lab_04 {
 
     public static void main(String[] args) {
 
-        List<Integer> myArraylist = Arrays.asList(2, 4, 6, 8);
+        List<Integer> myArraylist = new ArrayList<Integer>();
+        myArraylist.add(1);
+        myArraylist.add(2);
+        myArraylist.add(3);
+        myArraylist.add(4);
+        System.out.println("My arraylist is: "+ myArraylist);
+
         Scanner input = new Scanner(System.in);
         System.out.println("Please enter one number:   ");
         int userinput = input.nextInt();
-        myArraylist.add(userinput);
-        myArraylist.add(0,userinput);
-
 
         switch (userinput) {
             case 1:
                 System.out.println("Add number into Array list");
+                myArraylist.add(input.nextInt());
                 break;
             case 2:
                 System.out.println("Please Print number");
