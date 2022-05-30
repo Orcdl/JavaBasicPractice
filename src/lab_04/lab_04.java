@@ -1,4 +1,4 @@
-package Lab_04;
+package lab_04;
 /*
 Requirement:
 Create a simple menu with 4 options:
