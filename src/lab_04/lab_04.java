@@ -17,7 +17,7 @@ public class lab_04 {
     public static void main(String[] args) {
 
         List<Integer> myArraylist = new ArrayList<Integer>();
-        myArraylist.add(1);
+        myArraylist.add(6);
         myArraylist.add(2);
         myArraylist.add(3);
         myArraylist.add(4);
@@ -31,7 +31,12 @@ public class lab_04 {
             case 1:
                 System.out.println("Add number into Array list");
                 myArraylist.add(input.nextInt());
-                break;
+
+
+                for (Integer index = 0; index< myArraylist.size(); index++) {
+                    System.out.println(myArraylist.get(index));
+                }
+
             case 2:
                 System.out.println("Please Print number");
                 break;
