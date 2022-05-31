@@ -29,22 +29,46 @@ public class lab_04 {
 
         switch (userinput) {
             case 1:
-                System.out.println("Add number into Array list");
-                myArraylist.add(input.nextInt());
+                System.out.println("Add to number Array list");
 
-
-                for (Integer index = 0; index< myArraylist.size(); index++) {
-                    System.out.println(myArraylist.get(index));
-                }
+//                myArraylist.add(newElem.nextInt());
+//            for (Integer index = 0; index< myArraylist.size(); index++) {
+//                System.out.println(myArraylist.get(index));
+//                }
+                Scanner newElem = new Scanner(System.in);
+                System.out.println("Please enter new element:   ");
+                myArraylist.add(newElem.nextInt());
+                System.out.println(myArraylist);
 
             case 2:
-                System.out.println("Please Print number");
+                System.out.println("Which index you want to Print");
+                Scanner newElem1 = new Scanner(System.in);
+                System.out.println("Please input the index you want to print: ");
+//                System.out.println(newElem1.nextInt());
+                System.out.println(myArraylist.get(newElem1.nextInt()));
+
                 break;
+
             case 3:
                 System.out.println("Get maximum number ");
+                int max = myArraylist.get(0);
+                for (int i = 1; i < myArraylist.size(); i++) {
+                    if (myArraylist.get(i) > max) {
+                        max = myArraylist.get(i);
+                    }
+                }
+                System.out.println("Max value is" +" " + max);
+
                 break;
             case 4:
                 System.out.println("Get maximum number");
+                int min = myArraylist.get(0);
+                for(int i = 1; i<myArraylist.size(); i++){
+                    if(myArraylist.get(i) < min){
+                        min = myArraylist.get(i);
+                    }
+                }
+                System.out.println("Min value is"+ " " + min);
                 break;
             default:
                 System.out.println("Try another number pls");
