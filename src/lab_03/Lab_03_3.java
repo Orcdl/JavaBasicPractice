@@ -8,13 +8,13 @@ public class Lab_03_3 {
     public static void main(String[] args) {
         int[] arr = new int[]{12, 34, 1, 16, 28};
         for (int i = 0; i < arr.length; i++) {
-        for (int i1 = i + 1; i1 < arr.length; i1++) {
-            int selectE = 0;
-            if(arr[i] > arr[i1]){
-                selectE = arr[i];
-                arr[i] = arr[i1];
-                arr[i1] = selectE;
-            }
+            for (int i1 = i + 1; i1 < arr.length; i1++) {
+                if(arr[i] > arr[i1]){
+                    int selectE = 0;
+                    selectE = arr[i];
+                    arr[i] = arr[i1];
+                    arr[i1] = selectE;
+                }
             }
             System.out.println(arr[i]);
         }
