@@ -12,6 +12,6 @@ public class Lab_06_01 {
         int myHour = Integer.parseInt(String.valueOf(hourvalue));
         int myMintues = Integer.parseInt(String.valueOf(mintuesvalue));
         int mintuesCovert = (myHour * 60);
-        System.out.println("Totlal mintues is " + (mintuesCovert + myMintues));
+        System.out.println("Total mintues is " + (mintuesCovert + myMintues));
     }
 }
