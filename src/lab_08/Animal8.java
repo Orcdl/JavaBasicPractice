@@ -2,45 +2,49 @@ package lab_08;
 
 public class Animal8 {
     private int speed;
-    private boolean withWings;
+    private boolean flyable;
 
-    protected Animal8(Builder<?> builder) {
+    protected Animal8(Builder builder) {
         this.speed = builder.speed;
-        this.withWings = builder.withWings;
+        this.flyable = builder.flyable;
+    }
+
+    // Read only
+    public int getSpeed() {
+        return speed;
+    }
+
+    public boolean isFlyable() {
+        return flyable;
     }
 
     @Override
     public String toString() {
-        return "isFlyable " + this.withWings + " and has speed is " + this.speed;
+        return "Animal8{" +
+                "speed=" + speed +
+                ", flyable=" + flyable +
+                '}';
     }
 
-    public static Builder builder() {
-        return new Builder() {
-            public Builder getThis() {
-                return this;
-            }
-        };
-    }
+    //
 
-    public abstract static class Builder<T extends Builder<T>> {
-        private int speed;
-        private boolean withWings;
+    // Inner Class
+    public static class Builder {
+        private int speed = 0;
+        private boolean flyable = false;
 
-        public abstract T getThis();
-
-        public T withWings(boolean withWings) {
-            this.withWings = withWings;
-            return this.getThis();
+        public Builder setSpeed(int speed) {
+            this.speed = speed;
+            return this;
         }
 
-        public T speed(int speed) {
-            this.speed = speed;
-            return this.getThis();
+        public Builder setFlyable(boolean flyable) {
+            this.flyable = flyable;
+            return this;
         }
 
         public Animal8 build() {
             return new Animal8(this);
         }
     }
-
 }
