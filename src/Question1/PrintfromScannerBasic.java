@@ -2,7 +2,7 @@ package Question1;
 
 import java.util.Scanner;
 
-public class PrintfromScanner {
+public class PrintfromScannerBasic {
     public static void main(String[] args) {
         String inputofuserQ1;
         System.out.println("Please input your name");
