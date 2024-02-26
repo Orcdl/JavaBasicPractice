@@ -1,0 +1,5 @@
+2/ Check if an input number is prime or not? Analysis
+#1 : A prime number is a number that has only two divisors, which are 1 and itself.
+#2: 2 ways:
+- Let user input from scanner
+- Declare by your own
