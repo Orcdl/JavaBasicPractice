@@ -1,4 +1,4 @@
-Covert all numbers in the list into even number
+Part 1: Covert all numbers in the list into even number
 
 Logic:
  - +- 1
@@ -8,3 +8,7 @@ loop all number in the list
 if(isOddNumber) -> * 2
 get index
 set the new values
+
+Part 2: Remove all number has value = 2 in the list
+- UsingRemoveIf
+- Using RemoveAll
