@@ -12,3 +12,14 @@ set the new values
 Part 2: Remove all number has value = 2 in the list
 - UsingRemoveIf
 - Using RemoveAll
+
+
+Part 3: Remove duplicated value without knowing the input
+1. Has two list, List 1  & List 2
+2. Check the value of each of list
+3. Add values into List 1
+
+
+Part4: Get first minimum values from the list
+
+Part5: Hashmap - CRUD
