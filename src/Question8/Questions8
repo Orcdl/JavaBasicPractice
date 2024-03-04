@@ -1,0 +1,6 @@
+- Vấn đề:
+    - internal login page
+        - user name, password, loginBtn
+    - external login page
+        - usernamext, passwordext, loginBtnext
+    ⇒ Design necessary classes to test login page (Bài toán mà giống như gần hết, chỉ khác nhau một cái gì đó thôi ở bên trong, khác detail implementation → dùng abstraction luôn)
